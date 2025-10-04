@@ -7,6 +7,6 @@ services:
     environment:
       APP_USER_NAME: webdav
       APP_USER_PASSWD: webdav
-      DIGEST_AUTH_REALM: WebDav
+      #DIGEST_AUTH_REALM: WebDav
     volumes:
-      - ./volume:/var/webdav/data
+      - ./volume:/var/webdav
