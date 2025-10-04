@@ -1,0 +1,9 @@
+spring.application.name: FileStorage
+
+server:
+  port: 8088
+
+webdav:
+  root: http://localhost:85
+  username: webdav
+  password: webdav
