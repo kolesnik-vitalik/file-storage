@@ -1,4 +1,14 @@
 services:
+  filestorage: # ← имя сервиса (может быть любым)
+    image: file-storage:latest
+    container_name: file_storage
+    ports:
+      - "8088:8088"
+    environment:
+      - WEBDAV_URL=http://webdav:80
+    depends_on:
+      - webdav
+
   webdav:
     container_name: webdav
     image: "chonjay21/webdav:latest"
