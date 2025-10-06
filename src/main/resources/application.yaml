@@ -4,6 +4,6 @@ server:
   port: 8088
 
 webdav:
-  root: http://localhost:85
+  root: http://webdav:80
   username: webdav
   password: webdav
